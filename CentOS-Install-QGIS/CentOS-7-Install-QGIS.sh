@@ -1,0 +1,1 @@
+sudo yum install -y qgis qgis-python qgis-grass qgis-server
