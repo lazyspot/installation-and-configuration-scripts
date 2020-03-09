@@ -14,8 +14,8 @@ cd sqlite-autoconf-3290000
 sudo ./configure
 sudo make
 sudo make install
-sudo rm -rf sqlite-autoconf-3290000.tar.gz
-sudo rm -rf sqlite-autoconf-3290000
+sudo rm -rf /tmp/sqlite-autoconf-3290000.tar.gz
+sudo rm -rf /tmp/sqlite-autoconf-3290000
 #Install libsqlite3x-devel boost-devel
 sudo yum install -y libsqlite3x-devel.x86_64 
 sudo yum install -y boost-devel.x86_64 

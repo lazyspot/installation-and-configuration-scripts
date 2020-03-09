@@ -1,7 +1,6 @@
 CLION_VERSION=$1
-cat <<EOF > /usr/share/applications/newitem.desktop
+cat <<EOF > /usr/share/applications/CLion.desktop
 [Desktop Entry]
-Version=1.0
 Name=CLion
 Exec=sudo /opt/clion-${CLION_VERSION}/bin/clion.sh
 Terminal=false

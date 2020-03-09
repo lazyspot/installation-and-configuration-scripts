@@ -1,7 +1,6 @@
 PyCharm_Version=$1
-cat <<EOF > /usr/share/applications/newitem.desktop
+cat <<EOF > /usr/share/applications/PyCharm.desktop
 [Desktop Entry]
-Version=1.0
 Name=PyCharm
 Exec=sudo /opt/pycharm-${PyCharm_Version}/bin/pycharm.sh
 Terminal=false

@@ -3,7 +3,8 @@ if [ "$1" == "" ]; then
 	else
 	USER=$1
 fi
-PyCharm_Version=2018.3.7
+PyCharm_Version=2019.3.3
+ESA_SNAP_VERSION=7.0
 sudo yum install -y dos2unix
 cd ..
 cd CentOS-Install-basic-softwear
@@ -31,6 +32,7 @@ bash <(dos2unix < CentOS-7-Add-icon-to-MATE-Desktop.sh) ${PyCharm_Version}
 cd ..
 cd CentOS-Install-ESA-SNAP
 bash <(dos2unix < CentOS-7-Install-ESA-SNAP.sh)
+bash <(dos2unix < CentOS-7-Add-icon-to-MATE-Desktop.sh) ${ESA_SNAP_VERSION}
 cd ..
 cd CentOS-Install-QGIS
 bash <(dos2unix < CentOS-7-Install-QGIS.sh)

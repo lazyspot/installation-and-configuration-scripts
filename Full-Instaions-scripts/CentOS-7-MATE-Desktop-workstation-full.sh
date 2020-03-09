@@ -5,6 +5,7 @@ if [ "$1" == "" ]; then
 fi
 PyCharm_Version=2019.3.3
 CLION_VERSION=2019.3.4
+ESA_SNAP_VERSION=7.0
 
 sudo yum install -y dos2unix
 cd ..
@@ -37,6 +38,7 @@ bash <(dos2unix < CentOS-7-Add-icon-to-MATE-Desktop.sh) ${CLION_VERSION}
 cd ..
 cd CentOS-Install-ESA-SNAP
 bash <(dos2unix < CentOS-7-Install-ESA-SNAP.sh)
+bash <(dos2unix < CentOS-7-Add-icon-to-MATE-Desktop.sh) ${ESA_SNAP_VERSION}
 cd ..
 cd CentOS-Install-QGIS
 bash <(dos2unix < CentOS-7-Install-QGIS.sh)
