@@ -1,7 +1,7 @@
 SQL_LITE_VERSION=3290000
 YEAR=2019
 PROJ_VERSION=6.2.0
-GDAL_VERSION=3.0.1
+GDAL_VERSION=3.0.4
 sudo yum install -y wget
 sudo yum install -y hdf
 sudo yum install -y hdf-devel
@@ -41,6 +41,8 @@ sudo tar xzf /tmp/install-libkml-r864-64bit.tar.gz -C /tmp/
 sudo cp -r /tmp/install-libkml/include/* /usr/local/include
 sudo cp -r /tmp/install-libkml/lib/* /usr/local/lib
 sudo ldconfig
+sudo rm -rf /tmp/install-libkml-r864-64bit.tar.gz
+sudo rm -rf /tmp/install-libkml/
 #download GDAL
 sudo wget http://download.osgeo.org/gdal/${GDAL_VERSION}/gdal-${GDAL_VERSION}.tar.gz -O /tmp/gdal-${GDAL_VERSION}.tar.gz
 #Untar
@@ -49,8 +51,6 @@ sudo tar xzf /tmp/gdal-${GDAL_VERSION}.tar.gz -C /tmp/
 pushd /tmp/gdal-${GDAL_VERSION} && sudo ./configure --with-libkml ${WITH_HDF5} && popd
 sudo make --directory=/tmp/gdal-${GDAL_VERSION}
 sudo make install --directory=/tmp/gdal-${GDAL_VERSION}
-sudo rm -rf /tmp/install-libkml-r864-64bit.tar.gz
-sudo rm -rf /tmp/install-libkml/
 sudo rm -rf /tmp/gdal-${GDAL_VERSION}.tar.gz
 sudo rm -rf /tmp/gdal-${GDAL_VERSION}
 variable_name=LD_LIBRARY_PATH

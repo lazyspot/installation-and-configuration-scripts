@@ -3,6 +3,11 @@ if [ "$1" == "" ]; then
 	else
 	USER=$1
 fi
+if [ "$2" == "" ]; then
+	PASSWORD="$USER"
+	else
+	PASSWORD=$2
+fi
 PyCharm_Version=2019.3.3
 ESA_SNAP_VERSION=7.0
 sudo yum install -y dos2unix
@@ -42,5 +47,23 @@ bash <(dos2unix < CentOS-7-Install-Tkinker.sh)
 cd ..
 cd CentOS-Install-GIT
 bash <(dos2unix < CentOS-7-Install-GIT.sh)
+cd ..
+cd CentOS-Install-Python-libraries
+bash <(dos2unix < CentOS-7-Install-Python-libraries.sh)
+cd ..
+cd CentOS-Install-R
+bash <(dos2unix < CentOS-7-Install-R.sh)
+cd ..
+cd CentOS-Install-R-Studio
+bash <(dos2unix < CentOS-7-Install-R-Studio.sh) DESKTOP
+cd ..
+cd CentOS-Install-Libre-Office
+bash <(dos2unix < CentOS-7-Install-Libre-Office.sh)
+cd ..
+cd CentOS-Install-X-RDP
+#bash <(dos2unix < CentOS-7-Install-X-RDP.sh) $USER $PASSWORD
+cd ..
+cd CentOS-MATE-Configuration
+bash <(dos2unix < CentOS-7-Set-MATE-Theme.sh) ${USER}
 cd ..
 reboot
