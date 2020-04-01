@@ -53,9 +53,15 @@ sudo make --directory=/tmp/gdal-${GDAL_VERSION}
 sudo make install --directory=/tmp/gdal-${GDAL_VERSION}
 sudo rm -rf /tmp/gdal-${GDAL_VERSION}.tar.gz
 sudo rm -rf /tmp/gdal-${GDAL_VERSION}
+#Export variable as user
+if [ "$1" == "" ]; then
+	USER_NAME="$USER"
+	else
+	USER_NAME=$1
+fi
 variable_name=LD_LIBRARY_PATH
 variable_value=/usr/local/lib:$LD_LIBRARY_PATH
-echo "export "$variable_name"="$variable_value>>~/.bashrc
-echo $variable_name"="$variable_value>>~/.profile
-echo $variable_name"="$variable_value>>/etc/environment
+sudo -H -u ${USER_NAME} bash -c 'echo "export "$variable_name"="$variable_value>>~/.bashrc'
+sudo -H -u ${USER_NAME} bash -c 'echo $variable_name"="$variable_value>>~/.profile'
+sudo -H -u ${USER_NAME} bash -c 'echo $variable_name"="$variable_value>>/etc/environment'
 #https://stackoverflow.com/questions/13046624/how-to-permanently-export-a-variable-in-linux

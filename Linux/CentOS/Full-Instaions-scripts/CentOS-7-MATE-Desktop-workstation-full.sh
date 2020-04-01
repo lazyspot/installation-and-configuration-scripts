@@ -1,17 +1,17 @@
+
 if [ "$1" == "" ]; then
-	USER="$USER"
+	USER_NAME="$USER_NAME"
 	else
-	USER=$1
+	USER_NAME=$1
 fi
 if [ "$2" == "" ]; then
-	PASSWORD="$USER"
+	PASSWORD="$USER_NAME"
 	else
 	PASSWORD=$2
 fi
 PyCharm_Version=2019.3.3
 CLION_VERSION=2019.3.4
 ESA_SNAP_VERSION=7.0
-
 sudo yum install -y dos2unix
 cd ..
 cd CentOS-Install-basic-softwear
@@ -21,13 +21,13 @@ cd CentOS-Install-MATE-Desktop
 bash <(dos2unix < CentOS-7-Install-MATE-Desktop.sh)
 cd ..
 cd CentOS-Install-VirtualBox-guest-additions
-bash <(dos2unix < CentOS-7-Install-VirtualBox-guest-additions.sh ) ${USER}
+bash <(dos2unix < CentOS-7-Install-VirtualBox-guest-additions.sh ) ${USER_NAME}
 cd ..
 cd CentOS-Install-Google-Earth-Pro
 bash <(dos2unix < CentOS-7-Install-Google-Earth-Pro.sh)
 cd ..
 cd CentOS-Build-GDAL-from-source
-bash <(dos2unix < CentOS-7-Build-GDAL-from-source-3.0.1.sh)
+bash <(dos2unix < CentOS-7-Build-GDAL-from-source-3.0.1.sh) ${USER_NAME}
 bash <(dos2unix < CentOS-7-Add-python-to-GDAL.sh)
 cd ..
 cd CentOS-Install-CodeBlocks
@@ -67,9 +67,9 @@ cd CentOS-Install-Libre-Office
 bash <(dos2unix < CentOS-7-Install-Libre-Office.sh)
 cd ..
 cd CentOS-Install-X-RDP
-#bash <(dos2unix < CentOS-7-Install-X-RDP.sh) $USER $PASSWORD
+#bash <(dos2unix < CentOS-7-Install-X-RDP.sh) $USER_NAME $PASSWORD
 cd ..
 cd CentOS-MATE-Configuration
-bash <(dos2unix < CentOS-7-Set-MATE-Theme.sh) ${USER}
+bash <(dos2unix < CentOS-7-Set-MATE-Theme.sh) ${USER_NAME}
 cd ..
 reboot
