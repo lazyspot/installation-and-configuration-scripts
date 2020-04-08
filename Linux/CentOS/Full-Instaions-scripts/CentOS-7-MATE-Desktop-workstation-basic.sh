@@ -8,7 +8,7 @@ if [ "$2" == "" ]; then
 	else
 	PASSWORD=$2
 fi
-PyCharm_Version=2019.3.3
+PyCharm_Version=2019.3.4
 ESA_SNAP_VERSION=7.0
 sudo yum install -y dos2unix
 cd ..
