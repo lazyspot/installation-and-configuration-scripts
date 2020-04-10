@@ -1,2 +1,3 @@
 #Set EOL to lf for .sh scripts
 *.sh text eol=lf
+*.ps text eol=crlf
