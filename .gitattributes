@@ -1,2 +1,2 @@
-#Set EOL to lf
-* text=auto eol=lf
+#Set EOL to lf for .sh scripts
+*.sh text eol=lf
