@@ -1,6 +1,7 @@
 MAJA - software for cloud detection
 
 MAJA homepage:
+
 [https://logiciels.cnes.fr/en/content/maja](https://logiciels.cnes.fr/en/content/maja "https://logiciels.cnes.fr/en/content/maja")
 
 Start-MAJA - basic orchestrator
