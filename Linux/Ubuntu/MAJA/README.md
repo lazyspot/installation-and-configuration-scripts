@@ -11,3 +11,8 @@ Start-MAJA - basic orchestrator
 maja_peps
 
 [https://github.com/olivierhagolle/maja_peps](https://github.com/olivierhagolle/maja_peps "https://github.com/olivierhagolle/maja_peps")
+
+run maja help:
+```
+sudo /opt/MAJA/bin/maja --help
+```
