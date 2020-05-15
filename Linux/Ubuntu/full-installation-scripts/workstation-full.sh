@@ -9,6 +9,7 @@ if [ "$2" == "" ]; then
 	PASSWORD=$2
 fi
 PyCharm_Version=2020.1.1
+CLION_VERSION=2020.1.1
 ESA_SNAP_VERSION=7.0
 cd ..
 sudo apt-get update -y
@@ -20,9 +21,12 @@ sudo bash LibreOffice/install.sh
 sudo bash GIT/install.sh
 sudo bash Google-earth/install-dependency.sh
 sudo bash Google-earth/install.sh
-sudo bash PyCharm-community-edition/install-dependency.sh
-sudo bash PyCharm-community-edition/install.sh ${PyCharm_Version}
-sudo bash PyCharm-community-edition/add-icon-to-menu.sh ${PyCharm_Version}
+sudo bash PyCharm-professional/install-dependency.sh
+sudo bash PyCharm-professional/install.sh ${PyCharm_Version}
+sudo bash PyCharm-professional/add-icon-to-menu.sh ${PyCharm_Version}
+sudo bash CLion/install-dependency.sh
+sudo bash CLion/install.sh ${CLION_VERSION}
+sudo bash CLion/add-icon-to-menu.sh ${CLION_VERSION}
 sudo bash ESA-SNAP/install-dependency.sh
 sudo bash ESA-SNAP/install.sh ${ESA_SNAP_VERSION}
 sudo bash ESA-SNAP/add-icon-to-menu.sh
