@@ -2,7 +2,7 @@ PyCharm_Version=$1
 cat <<EOF > /usr/share/applications/PyCharm.desktop
 [Desktop Entry]
 Name=PyCharm
-Exec=bash /opt/pycharm-${PyCharm_Version}/bin/pycharm.sh
+Exec=sudo bash /opt/pycharm-${PyCharm_Version}/bin/pycharm.sh
 Terminal=false
 Type=Application
 StartupNotify=true

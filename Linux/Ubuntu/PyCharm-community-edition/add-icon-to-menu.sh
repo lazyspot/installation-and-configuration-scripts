@@ -3,7 +3,7 @@ cat <<EOF > /usr/share/applications/newitem.desktop
 [Desktop Entry]
 Version=1.0
 Name=PyCharm
-Exec=bash /opt/pycharm-community-${PyCharm_Version}/bin/pycharm.sh
+Exec=sudo bash /opt/pycharm-community-${PyCharm_Version}/bin/pycharm.sh
 Terminal=false
 Type=Application
 StartupNotify=true

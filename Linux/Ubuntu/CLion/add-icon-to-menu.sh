@@ -2,7 +2,7 @@ CLION_VERSION=$1
 cat <<EOF > /usr/share/applications/CLion.desktop
 [Desktop Entry]
 Name=CLion
-Exec=bash /opt/clion-${CLION_VERSION}/bin/clion.sh
+Exec=sudo bash /opt/clion-${CLION_VERSION}/bin/clion.sh
 Terminal=false
 Type=Application
 StartupNotify=true
