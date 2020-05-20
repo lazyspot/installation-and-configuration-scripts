@@ -32,4 +32,9 @@ sudo bash ESA-SNAP/install.sh ${ESA_SNAP_VERSION}
 sudo bash ESA-SNAP/add-icon-to-menu.sh
 sudo bash CodeBlocks/install.sh
 sudo bash GDAL/install.sh
+sudo bash OpenCV/install.sh
+sudo bash Doxygen/install-dependency.sh
+sudo bash Doxygen/install.sh
+sudo bash Sphinx/install-dependency.sh
+sudo bash Sphinx/install.sh
 sudo reboot
