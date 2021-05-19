@@ -71,4 +71,5 @@ source: https://answers.opencv.org/question/217959/libopencv_coreso31-cannot-ope
 
 ## Useful links about segmentation:
 https://www.youtube.com/watch?v=nDPWywWRIRo
+
 https://www.youtube.com/watch?v=jLd2I2adQtw
