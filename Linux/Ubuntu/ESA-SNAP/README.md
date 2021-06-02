@@ -36,6 +36,7 @@ INFO: org.esa.snap.core.dataop.dem.ElevationFile: http retrieving http://srtm.cs
 ```
 
 Download SRTM manualy to:
+
 ```/home/${USER}/.snap/auxdata/dem/SRTM 3Sec```
 
 or
