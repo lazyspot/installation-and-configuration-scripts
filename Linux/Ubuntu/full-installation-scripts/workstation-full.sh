@@ -10,7 +10,7 @@ if [ "$2" == "" ]; then
 fi
 PyCharm_Version=2020.1.1
 CLION_VERSION=2020.1.1
-ESA_SNAP_VERSION=7.0
+ESA_SNAP_VERSION=8.0
 cd ..
 sudo apt-get update -y
 sudo bash Development-tools/install.sh
