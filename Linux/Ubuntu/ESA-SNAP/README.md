@@ -15,7 +15,7 @@ snap --nosplash --nogui --modules --update-all
 
 ## Resolve problems with download SRTM files Sentinel 1
 Logs:
-```bash
+```
 INFO: org.esa.snap.core.gpf.operators.tooladapter.ToolAdapterIO: Initializing external tool adapters
 INFO: org.esa.s2tbx.dataio.gdal.GDALVersion: Incompatible GDAL 3.2.1 found on system. Internal GDAL 3.0.0 from distribution will be used.
 INFO: org.esa.s2tbx.dataio.gdal.GDALVersion: Internal GDAL 3.0.0 set to be used by SNAP.
